@@ -1,16 +1,37 @@
-<div class="center hero-unit">	
-	<h1>Twitter Newspaper</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+</head>
 
+<body>
+
+<div class="center hero-unit">		
 	<h3>
-	This is the home page for the
-	<a href="https://github.com/sigibart/TwitterNewspaper"> ROR Classes </a> application.
+	Hello, this is the home page for the ror classes application.
 	</h3>
+</div>
 
-		
+<div id="wrapper">
+<div id="left">
+<h4>Idea overviewIdea</h4>
+<p>text text text text text text text text text text text text text text </p>
+</div>
+<div id="middle">
+<h4>Maun usage scenario</h4>
+<p>text text text text text text text text text text text text text text </p>
+</div>
+<div id="right">
+<h4>Links to github</h4>
+<p><a href="https://github.com/sigibart/TwitterNewspaper"> App repo</a> </p>
+<p><a href="https://github.com/sigibart/"> My github</a> </p>
+</div>
+
 </div>
 
 
-
-
-<p>Current date: <%= Time.now %></p>
-
+</body>
+</html>
