@@ -4,17 +4,7 @@
   <title>TwitterNewspaper</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <style type="text/css">
- 	#footer{
- 		position: fixed;
- 		left: 0px;
- 		bottom: 0px;
- 		width: 100%;
- 		border-top: 2px solid blue;
- 		background-color: #000000; 		
- 	}
-	</style>	
+  <%= csrf_meta_tags %>  
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -36,7 +26,13 @@
       </div>
     </header>
     <footer>
-    	<div id="footer"><font color = "white"> Current date: <%= Time.now %></font></div>	
+    	<div id="footer">
+    		<font color = "white">
+    			<H5 align="center">
+    	 			Current date: <%= Time.now %>
+    	 		</H5 align>
+    	 	</font>
+    	 </div>	
     </footer>
 
     <div class="container">
