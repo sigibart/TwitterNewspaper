@@ -1,0 +1,40 @@
+!!!
+%html
+  %head
+    %title Home
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .center.hero-unit
+      %h3
+        Hello, this is the home page for the ror classes application
+    #wrapper
+      #left
+        %h4 Idea overview
+        %p
+          The idea is to let user create hes/her own paper or newsteller using sources such as Twitter or Facebook.
+        %p
+          Grow an audience.
+        %p
+          Try it now.
+        %p
+          Its Free.
+      #middle
+        %h4 Maun usage scenario
+        %p
+          1. User logs in with twitter account;
+        %p
+          2. Enters paper's title;
+        %p
+          3. Fills in keywords, names, #tags, RSS feeds;
+        %p
+          4. Picks found tweets to papers content;
+        %p
+          5. Thats it, Your paper is ready! Now to the customization!
+      #right
+        %h4 Links to github
+        %p
+          %a{:href => "https://github.com/sigibart/TwitterNewspaper"} App repo
+        %p
+          %a{:href => "https://github.com/sigibart/"} My github

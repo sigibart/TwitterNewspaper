@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title TwitterNewspaper
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header.navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          = image_tag("rails.jpg", alt: "Rails", size: "70x70")
+          = link_to "Twitter Newspaper", '#', id: "logo"
+          1
+          %nav
+            %ul.nav.pull-right
+              %li= link_to "Home",    '/'
+              = link_to "Join!", '#', class: "btn btn-medium btn-primary"
+    %footer
+      #footer
+        %font{:color => "white"}
+        %h5{:align => "center"}
+          Current date: #{Time.now}
+          </H5 align>
+    .container
+      = yield
