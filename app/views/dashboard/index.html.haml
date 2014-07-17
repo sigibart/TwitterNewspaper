@@ -8,5 +8,8 @@
   %body
     .center.hero-unit
       %h3
-        Hello, this is your dashboard
+        Hello, 
+        #{current_user.email}
+        this is your dashboard
+        = link_to "Sign out", destroy_user_session_path, :method => :delete
     

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   devise_for :users
+  resources :dashboard
   root to: "home#index"
   #match '/about',   to: 'static_pages#about',   via: 'get'
   
