@@ -14,13 +14,10 @@ end
 
 require 'spec_helper'
 
-describe "Static pages" do
+describe "Home" do
+  it "should have the content 'Twitter Newspaper'" do
+    visit '/home/index'
+    expect(page).to have_content('Twitter Newspaper')
 
-  describe "Home page" do
-
-    it "should have the content 'Twitter Newspaper'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Twitter Newspaper')
-    end
   end	
 end
