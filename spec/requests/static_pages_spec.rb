@@ -14,7 +14,7 @@ end
 
 require 'spec_helper'
 
-describe "Home" do
+describe "Index" do
   it "should have the content 'Twitter Newspaper'" do
     visit '/home/index'
     expect(page).to have_content('Twitter Newspaper')

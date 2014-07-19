@@ -64,3 +64,7 @@ group :development do
   gem "hpricot"		#for haml
   gem "ruby_parser"	#for haml
 end
+
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth'
