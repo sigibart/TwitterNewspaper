@@ -259,4 +259,6 @@ Devise.setup do |config|
 
   require "omniauth-twitter"
   config.omniauth :twitter, 'fTyGpTq3LQeCEGXD8IzxcMqPK', 'uNRW2Yb4EwGMHMyShh21dMoa6RmU5K5kdjCe5JMgSn1g6XLt7N'
+
+  
 end
