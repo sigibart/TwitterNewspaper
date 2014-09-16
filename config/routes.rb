@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
     
-  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :dashboard
   root to: "home#index"
+  get "/user/profile", :to => "user#profile", :as => :user_profile
   #match '/about',   to: 'static_pages#about',   via: 'get'
   
 
